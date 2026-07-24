@@ -9,21 +9,19 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://alex-carter-portfolio-2026.nattagitphootsorn.chatgpt.site",
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
-  title: "Alex Carter — Product Designer & Developer",
+  title: "Takachi Yakinuma — Frontend & Full-Stack Developer",
   description:
-    "A simple portfolio for product designer and front-end developer Alex Carter.",
+    "Portfolio of Takachi Yakinuma, a frontend and full-stack developer building enterprise applications and AI-powered products.",
   openGraph: {
-    title: "Alex Carter",
-    description: "Product Designer & Developer",
-    images: ["/og.png"],
+    title: "Takachi Yakinuma",
+    description: "Frontend & Full-Stack Developer",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Alex Carter",
-    description: "Product Designer & Developer",
-    images: ["/og.png"],
+    card: "summary",
+    title: "Takachi Yakinuma",
+    description: "Frontend & Full-Stack Developer",
   },
 };
 

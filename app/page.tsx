@@ -3,21 +3,26 @@ export default function Home() {
     <main>
       <nav aria-label="Main navigation">
         <a className="name" href="#top">
-          Alex Carter
+          Takachi Yakinuma
         </a>
         <div className="navLinks">
           <a href="#projects">Projects</a>
-          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a className="navOptional" href="/side-projects">
+            Side projects
+          </a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
       <section className="intro" id="top" aria-labelledby="intro-title">
-        <p className="label">Hello, I&apos;m Alex.</p>
-        <h1 id="intro-title">Product designer and front-end developer.</h1>
+        <p className="label">Hello, I&apos;m Takachi.</p>
+        <h1 id="intro-title">
+          Frontend developer building enterprise and AI-powered products.
+        </h1>
         <p className="introText">
-          I design useful digital products and build clear, responsive
-          websites.
+          I build responsive, maintainable web applications with React,
+          Next.js, TypeScript, and modern full-stack technologies.
         </p>
         <a className="textLink" href="#projects">
           View my projects <span aria-hidden="true">↓</span>
@@ -30,9 +35,61 @@ export default function Home() {
           <h2 id="projects-title">Projects</h2>
         </div>
 
-        <div className="emptyProjects">
-          <p>Projects coming soon.</p>
-          <span>I&apos;ll add selected work here.</span>
+        <div className="projectContent">
+          <div className="projectList">
+            <article className="projectCard">
+            <img
+              src="/projects/pea-dmms-dashboard.jpg"
+              alt="PEA DMMS renewable energy monitoring dashboard"
+            />
+            <div className="projectDetails">
+              <p className="projectType">Enterprise web application</p>
+              <h3>PEA DMMS</h3>
+              <p>
+                A bilingual digital management and monitoring system for
+                Thailand&apos;s Provincial Electricity Authority. The platform
+                manages renewable-energy data, user access, documents, and
+                operational dashboards.
+              </p>
+              <ul className="projectTech" aria-label="PEA DMMS technologies">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>PrimeReact</li>
+                <li>Tailwind CSS</li>
+                <li>Thai / English</li>
+              </ul>
+            </div>
+            </article>
+
+            <article className="projectCard">
+              <div className="projectPlaceholder" aria-hidden="true">
+                <strong>IDS Agent</strong>
+                <span>Commit → Test card → Guided QA</span>
+              </div>
+              <div className="projectDetails">
+                <p className="projectType">AI-assisted QA platform</p>
+                <h3>IDS Agent</h3>
+                <p>
+                  A human-in-the-loop testing system that turns software changes
+                  into structured test cards and guides QA through browser
+                  execution. It combines a management platform, background
+                  workers, a Discord bot, and a Chrome extension.
+                </p>
+                <ul className="projectTech" aria-label="IDS Agent technologies">
+                  <li>Next.js</li>
+                  <li>Bun</li>
+                  <li>Hono</li>
+                  <li>MongoDB</li>
+                  <li>Chrome MV3</li>
+                  <li>OpenRouter</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <a className="textLink projectMoreLink" href="/side-projects">
+            View side projects <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 
@@ -43,32 +100,135 @@ export default function Home() {
         </div>
         <div className="sectionContent">
           <p>
-            I enjoy turning complex ideas into simple, easy-to-use experiences.
-            My work covers product design, websites, and front-end development.
+            I&apos;m a frontend and full-stack developer with one year of
+            professional experience building large-scale government and
+            enterprise applications. I currently work on PEA DMMS and IDS Agent
+            at The Island Digital Solutions.
           </p>
-          <ul aria-label="Skills">
-            <li>Product design</li>
-            <li>Web design</li>
-            <li>Front-end development</li>
+          <ul aria-label="Professional details">
+            <li>
+              <strong>Experience:</strong> The Island Digital Solutions,
+              2025–Present
+            </li>
+            <li>
+              <strong>Education:</strong> College of Computing, KKU, 2022–2025
+            </li>
+            <li>
+              <strong>Languages:</strong> Thai (native), English (upper
+              intermediate)
+            </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <div className="sectionHeading">
+          <p className="label">03</p>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+
+        <div className="skillsContent">
+          <p>
+            Skills demonstrated across my professional and personal projects.
+          </p>
+          <div className="skillsGrid">
+            <article className="skillGroup">
+              <h3>Frontend &amp; UI</h3>
+              <ul>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>React Native</li>
+                <li>Tailwind CSS</li>
+                <li>PrimeReact</li>
+                <li>shadcn/ui</li>
+                <li>SCSS</li>
+                <li>Responsive design</li>
+              </ul>
+            </article>
+
+            <article className="skillGroup">
+              <h3>Backend &amp; Data</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Bun</li>
+                <li>Hono</li>
+                <li>Express</li>
+                <li>REST APIs</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PocketBase</li>
+                <li>Go</li>
+                <li>Laravel / PHP</li>
+              </ul>
+            </article>
+
+            <article className="skillGroup">
+              <h3>AI &amp; Automation</h3>
+              <ul>
+                <li>AI agents</li>
+                <li>OpenRouter</li>
+                <li>MCP</li>
+                <li>Browser automation</li>
+                <li>Test generation</li>
+                <li>Human-in-the-loop QA</li>
+                <li>Chrome extensions</li>
+              </ul>
+            </article>
+
+            <article className="skillGroup">
+              <h3>Enterprise &amp; Platform</h3>
+              <ul>
+                <li>Authentication &amp; RBAC</li>
+                <li>Keycloak</li>
+                <li>ThaiD</li>
+                <li>OAuth / JWT</li>
+                <li>Thai-English i18n</li>
+                <li>Dashboards</li>
+                <li>Document workflows</li>
+                <li>REST API integration</li>
+                <li>Axios</li>
+                <li>Git &amp; GitHub</li>
+                <li>Apache Superset</li>
+                <li>Docker</li>
+                <li>Background workers</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="contact" aria-labelledby="contact-title">
         <div className="sectionHeading">
-          <p className="label">03</p>
+          <p className="label">04</p>
           <h2 id="contact-title">Contact</h2>
         </div>
         <div className="sectionContent">
-          <p>Have a project in mind? Feel free to get in touch.</p>
-          <a className="email" href="mailto:hello@alexcarter.dev">
-            hello@alexcarter.dev
-          </a>
+          <p>I&apos;m open to frontend and full-stack opportunities.</p>
+          <div className="contactLinks">
+            <a className="email" href="mailto:chitakachiw@gmail.com">
+              chitakachiw@gmail.com
+            </a>
+            <a className="email" href="tel:+66610082534">
+              061-008-2534
+            </a>
+            <a
+              className="email"
+              href="https://github.com/potaytows"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </section>
 
       <footer>
-        <p>© 2026 Alex Carter</p>
+        <p>© 2026 Takachi Yakinuma</p>
         <a href="#top">Back to top ↑</a>
       </footer>
     </main>
