@@ -1,162 +1,75 @@
-const projects = [
-  {
-    number: "01",
-    title: "Northline Finance",
-    type: "Product design · Front-end",
-    description:
-      "A calmer way for small teams to understand cash flow, invoices, and the decisions that matter next.",
-    accent: "violet",
-  },
-  {
-    number: "02",
-    title: "Field Notes",
-    type: "Brand system · Web design",
-    description:
-      "A digital home for an independent journal, built around generous typography and focused reading.",
-    accent: "orange",
-  },
-  {
-    number: "03",
-    title: "Morrow Studio",
-    type: "Creative direction · Development",
-    description:
-      "A flexible portfolio for a small architecture practice where each project gets room to breathe.",
-    accent: "blue",
-  },
-];
-
 export default function Home() {
   return (
-    <main id="top">
-      <nav className="nav" aria-label="Main navigation">
-        <a className="logo" href="#top" aria-label="Alex Carter, home">
-          AC<span>.</span>
+    <main>
+      <nav aria-label="Main navigation">
+        <a className="name" href="#top">
+          Alex Carter
         </a>
         <div className="navLinks">
-          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
           <a href="#about">About</a>
-          <a className="navCta" href="mailto:hello@alexcarter.dev">
-            Let&apos;s talk <span aria-hidden="true">↗</span>
-          </a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      <section className="hero" aria-labelledby="hero-title">
-        <p className="eyebrow">
-          <span className="statusDot" aria-hidden="true" />
-          Available for select projects · 2026
+      <section className="intro" id="top" aria-labelledby="intro-title">
+        <p className="label">Hello, I&apos;m Alex.</p>
+        <h1 id="intro-title">Product designer and front-end developer.</h1>
+        <p className="introText">
+          I design useful digital products and build clear, responsive
+          websites.
         </p>
-        <h1 id="hero-title">
-          I design digital
-          <br />
-          experiences that
-          <br />
-          <em>feel effortless.</em>
-        </h1>
-        <div className="heroBottom">
+        <a className="textLink" href="#projects">
+          View my projects <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <div className="sectionHeading">
+          <p className="label">01</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+
+        <div className="emptyProjects">
+          <p>Projects coming soon.</p>
+          <span>I&apos;ll add selected work here.</span>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div className="sectionHeading">
+          <p className="label">02</p>
+          <h2 id="about-title">About</h2>
+        </div>
+        <div className="sectionContent">
           <p>
-            I&apos;m Alex, an independent product designer and front-end
-            developer helping thoughtful teams turn ambitious ideas into clear,
-            useful products.
+            I enjoy turning complex ideas into simple, easy-to-use experiences.
+            My work covers product design, websites, and front-end development.
           </p>
-          <a className="circleLink" href="#work" aria-label="View selected work">
-            <span>Explore</span>
-            <span aria-hidden="true">↓</span>
+          <ul aria-label="Skills">
+            <li>Product design</li>
+            <li>Web design</li>
+            <li>Front-end development</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <div className="sectionHeading">
+          <p className="label">03</p>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div className="sectionContent">
+          <p>Have a project in mind? Feel free to get in touch.</p>
+          <a className="email" href="mailto:hello@alexcarter.dev">
+            hello@alexcarter.dev
           </a>
         </div>
-        <div className="heroOrb" aria-hidden="true">
-          <div className="orbCore" />
-        </div>
-      </section>
-
-      <section className="work section" id="work" aria-labelledby="work-title">
-        <header className="sectionHeader">
-          <p className="sectionLabel">Selected work</p>
-          <h2 id="work-title">A few things I&apos;ve made.</h2>
-        </header>
-
-        <div className="projectGrid">
-          {projects.map((project) => (
-            <article className="project" key={project.number}>
-              <div className={`projectVisual ${project.accent}`}>
-                <span className="projectNumber">{project.number}</span>
-                <div className="projectWindow" aria-hidden="true">
-                  <div className="windowBar">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <div className="windowContent">
-                    <i />
-                    <b />
-                    <b />
-                    <b />
-                  </div>
-                </div>
-              </div>
-              <div className="projectMeta">
-                <div>
-                  <p>{project.type}</p>
-                  <h3>{project.title}</h3>
-                </div>
-                <span className="projectArrow" aria-hidden="true">
-                  ↗
-                </span>
-              </div>
-              <p className="projectDescription">{project.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="about section" id="about" aria-labelledby="about-title">
-        <p className="sectionLabel light">A little about me</p>
-        <div className="aboutGrid">
-          <h2 id="about-title">
-            Good design is clear,
-            <br />
-            curious, and <em>human.</em>
-          </h2>
-          <div className="aboutCopy">
-            <p>
-              For the past eight years, I&apos;ve worked across product,
-              identity, and code—often all three at once. I like getting close to
-              the problem, finding the simplest useful idea, and shaping every
-              detail until it feels inevitable.
-            </p>
-            <p>
-              When I&apos;m not at my desk, you&apos;ll find me on a long walk
-              with a camera, making coffee too slowly, or collecting books I
-              promise I&apos;ll read.
-            </p>
-            <div className="skills" aria-label="Areas of expertise">
-              <span>Product design</span>
-              <span>Creative direction</span>
-              <span>Front-end development</span>
-              <span>Design systems</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="contact" aria-labelledby="contact-title">
-        <p className="sectionLabel">Start a conversation</p>
-        <h2 id="contact-title">
-          Have a good idea?
-          <br />
-          <em>Let&apos;s make it real.</em>
-        </h2>
-        <a className="emailLink" href="mailto:hello@alexcarter.dev">
-          hello@alexcarter.dev <span aria-hidden="true">↗</span>
-        </a>
       </section>
 
       <footer>
-        <a className="logo footerLogo" href="#top" aria-label="Back to top">
-          AC<span>.</span>
-        </a>
-        <p>Independent designer &amp; developer</p>
-        <p>© 2026 · Built with care</p>
+        <p>© 2026 Alex Carter</p>
+        <a href="#top">Back to top ↑</a>
       </footer>
     </main>
   );
