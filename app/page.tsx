@@ -64,24 +64,28 @@ export default function Home() {
             <article className="projectCard">
               <div className="projectPlaceholder" aria-hidden="true">
                 <strong>IDS Agent</strong>
-                <span>Commit → Test card → Guided QA</span>
+                <span>Rust runtime → Durable sessions → Guided QA</span>
               </div>
               <div className="projectDetails">
-                <p className="projectType">AI-assisted QA platform</p>
+                <p className="projectType">AI agent and QA platform</p>
                 <h3>IDS Agent</h3>
                 <p>
-                  A human-in-the-loop testing system that turns software changes
-                  into structured test cards and guides QA through browser
-                  execution. It combines a management platform, background
-                  workers, a Discord bot, and a Chrome extension.
+                  An AI-powered QA and coding-agent platform rebuilt around a
+                  Rust-native Coco runtime. A per-user daemon supervises
+                  isolated agent engines, while durable event replay keeps
+                  remote sessions reliable across disconnects. Next.js,
+                  SolidJS, MongoDB, and a Chrome extension provide the control
+                  plane and guided QA experience.
                 </p>
                 <ul className="projectTech" aria-label="IDS Agent technologies">
+                  <li>Rust</li>
+                  <li>Axum</li>
+                  <li>Tokio</li>
+                  <li>SQLite</li>
                   <li>Next.js</li>
-                  <li>Bun</li>
-                  <li>Hono</li>
+                  <li>SolidJS</li>
                   <li>MongoDB</li>
                   <li>Chrome MV3</li>
-                  <li>OpenRouter</li>
                 </ul>
               </div>
             </article>
@@ -140,6 +144,8 @@ export default function Home() {
                 <li>TypeScript</li>
                 <li>JavaScript</li>
                 <li>React Native</li>
+                <li>SolidJS</li>
+                <li>Vite</li>
                 <li>Tailwind CSS</li>
                 <li>PrimeReact</li>
                 <li>shadcn/ui</li>
@@ -149,8 +155,12 @@ export default function Home() {
             </article>
 
             <article className="skillGroup">
-              <h3>Backend &amp; Data</h3>
+              <h3>Backend, Data &amp; Systems</h3>
               <ul>
+                <li>Rust</li>
+                <li>Axum</li>
+                <li>Tokio</li>
+                <li>SQLite</li>
                 <li>Node.js</li>
                 <li>Bun</li>
                 <li>Hono</li>
@@ -176,6 +186,7 @@ export default function Home() {
                 <li>Test generation</li>
                 <li>Human-in-the-loop QA</li>
                 <li>Chrome extensions</li>
+                <li>Durable agent runtimes</li>
               </ul>
             </article>
 
@@ -195,6 +206,9 @@ export default function Home() {
                 <li>Apache Superset</li>
                 <li>Docker</li>
                 <li>Background workers</li>
+                <li>WebSockets &amp; SSE</li>
+                <li>Event-driven architecture</li>
+                <li>Cross-platform releases</li>
               </ul>
             </article>
           </div>
