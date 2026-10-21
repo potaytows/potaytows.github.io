@@ -18,11 +18,11 @@ export default function Home() {
       <section className="intro" id="top" aria-labelledby="intro-title">
         <p className="label">Hello, I&apos;m Takachi.</p>
         <h1 id="intro-title">
-          Frontend developer building enterprise and AI-powered products.
+          Full-stack developer building enterprise systems and AI-powered tools.
         </h1>
         <p className="introText">
-          I build responsive, maintainable web applications with React,
-          Next.js, TypeScript, and modern full-stack technologies.
+          I build responsive web applications and reliable developer platforms
+          with React, Next.js, TypeScript, Rust, and modern backend technologies.
         </p>
         <a className="textLink" href="#projects">
           View my projects <span aria-hidden="true">↓</span>
@@ -38,27 +38,27 @@ export default function Home() {
         <div className="projectContent">
           <div className="projectList">
             <article className="projectCard">
-            <img
-              src="/projects/pea-dmms-dashboard.jpg"
-              alt="PEA DMMS renewable energy monitoring dashboard"
-            />
-            <div className="projectDetails">
-              <p className="projectType">Enterprise web application</p>
-              <h3>PEA DMMS</h3>
-              <p>
-                A bilingual digital management and monitoring system for
-                Thailand&apos;s Provincial Electricity Authority. The platform
-                manages renewable-energy data, user access, documents, and
-                operational dashboards.
-              </p>
-              <ul className="projectTech" aria-label="PEA DMMS technologies">
-                <li>Next.js</li>
-                <li>TypeScript</li>
-                <li>PrimeReact</li>
-                <li>Tailwind CSS</li>
-                <li>Thai / English</li>
-              </ul>
-            </div>
+              <img
+                src="/projects/pea-dmms-dashboard.jpg"
+                alt="PEA DMMS renewable energy monitoring dashboard"
+              />
+              <div className="projectDetails">
+                <p className="projectType">Enterprise web application</p>
+                <h3>PEA DMMS</h3>
+                <p>
+                  A bilingual digital management and monitoring system for
+                  Thailand&apos;s Provincial Electricity Authority. The platform
+                  manages renewable-energy data, user access, documents, and
+                  operational dashboards.
+                </p>
+                <ul className="projectTech" aria-label="PEA DMMS technologies">
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>PrimeReact</li>
+                  <li>Tailwind CSS</li>
+                  <li>Thai / English</li>
+                </ul>
+              </div>
             </article>
 
             <article className="projectCard">
@@ -104,10 +104,12 @@ export default function Home() {
         </div>
         <div className="sectionContent">
           <p>
-            I&apos;m a frontend and full-stack developer with one year of
-            professional experience building large-scale government and
-            enterprise applications. I currently work on PEA DMMS and IDS Agent
-            at The Island Digital Solutions.
+            I&apos;m a full-stack developer with 1+ year of professional
+            experience building large-scale enterprise systems and AI-powered
+            developer tools. My work spans polished web interfaces, secure
+            APIs, durable Rust agent runtimes, and event-driven services. I
+            currently build PEA DMMS and IDS Agent at The Island Digital
+            Solutions.
           </p>
           <ul aria-label="Professional details">
             <li>
@@ -221,7 +223,9 @@ export default function Home() {
           <h2 id="contact-title">Contact</h2>
         </div>
         <div className="sectionContent">
-          <p>I&apos;m open to frontend and full-stack opportunities.</p>
+          <p>
+            I&apos;m open to full-stack, systems, and AI platform opportunities.
+          </p>
           <div className="contactLinks">
             <a className="email" href="mailto:chitakachiw@gmail.com">
               chitakachiw@gmail.com

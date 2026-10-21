@@ -11,17 +11,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
-  title: "Takachi Yakinuma — Frontend & Full-Stack Developer",
+  title: "Takachi Yakinuma — Full-Stack Developer",
   description:
-    "Portfolio of Takachi Yakinuma, a frontend and full-stack developer building enterprise applications and AI-powered products.",
+    "Portfolio of Takachi Yakinuma, a full-stack developer building enterprise systems, Rust agent runtimes, and AI-powered developer tools.",
   openGraph: {
     title: "Takachi Yakinuma",
-    description: "Frontend & Full-Stack Developer",
+    description: "Full-Stack Developer — Enterprise Systems & AI Tools",
   },
   twitter: {
     card: "summary",
     title: "Takachi Yakinuma",
-    description: "Frontend & Full-Stack Developer",
+    description: "Full-Stack Developer — Enterprise Systems & AI Tools",
   },
 };
 
